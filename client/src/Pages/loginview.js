@@ -66,11 +66,17 @@ import {
               name="email"
               onChange={handleChange}
             />
-            
+            <TextField
+              label="Password"
+              fullWidth
+              required
+              margin="normal"
+              id="password  "
+              name="password"
+              onChange={handleChange}
+              type="password"
+            />
 
-
-            
-  
             <ErrorAlert error={serverError} />
             <Button type="submit" fullWidth variant="contained" sx={{ my: 2 }}>
               Login
